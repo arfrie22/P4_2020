@@ -107,7 +107,7 @@ def play_iterative_rounds(player1, player2):
     Returns 4-tuple, for example ('cc', 'bb', -200, 600) 
     but with much longer strings 
     '''
-    number_of_rounds = random.randint(100, 200)
+    number_of_rounds = 100
     moves1 = ''
     moves2 = ''
     score1 = 0
@@ -125,10 +125,10 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     Returns a 2-tuple with score1 and score2 incremented by this round
     '''
     
-    RELEASE = 0 # (R, "reward" in literature) when both players collude
-    TREAT = 100 # (T, "temptation" in literature) when you betray your partner
-    SEVERE_PUNISHMENT = -500 # (S, "sucker" in literature) when your partner betrays you
-    PUNISHMENT = -250 # (P) when both players betray each other
+    RELEASE = 100 # (R, "reward" in literature) when both players collude
+    TREAT = 300 # (T, "temptation" in literature) when you betray your partner
+    SEVERE_PUNISHMENT = -150 # (S, "sucker" in literature) when your partner betrays you
+    PUNISHMENT = -400 # (P) when both players betray each other
     
     # Keep T > R > P > S to be a Prisoner's Dilemma
     # Keep 2R > T + S to be an Iterative Prisoner's Dilemma
