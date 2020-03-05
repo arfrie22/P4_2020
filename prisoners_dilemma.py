@@ -43,7 +43,7 @@ betray = example1
 collude = example0
 
 modules = [#example1,example0,
-team0, team1, team2, team3, team4, team5, team6, team7, team10], 
+team0, team1, team2, team3, team4, team5, team6, team7, team10] 
 #team11, team12, team13, team14]
 for module in modules:
     reload(module)
