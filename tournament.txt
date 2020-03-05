@@ -28,7 +28,7 @@ Player 10 (P10): T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed, C
 Player 11 (P11): The name the team gives to itself, The name the team gives to this strategy
         How does this strategy decide?
 Player 12 (P12): HYPEBEASTS, [retacted]'s Algorithm
-        [redacted]
+        doing ur mom
 Player 13 (P13): The name the team gives to itself, The name the team gives to this strategy
         How does this strategy decide?
 Player 14 (P14): The name the team gives to itself, The name the team gives to this strategy
@@ -42,46 +42,46 @@ Section 1 - Player vs. Player
 --------------------------------------------------------------------------------
 Each column shows pts/round earned against each other player:
              P0     P1     P2     P3     P4     P5     P6     P7     P8     P9    P10    P11    P12    P13    P14    P15    P16
-vs. P0 :      0   -150   -150   -400   -275   -388   -150   -398   -338   -200   -398   -150   -398   -150   -150   -150   -385
-vs. P1 :    300      0    100    300    100    290    100    100    250    140    114    100    102    100    100    100    288
-vs. P2 :    300    100      0    298    100    290    100    100    250    140    108    100    102    100    100    100    288
-vs. P3 :   -400   -150   -148      0   -275   -388   -150   -398   -338   -200   -398   -150   -398   -150   -150   -150   -385
-vs. P4 :    -50    100    100    -50      0      6    100    100     15     90    -48    100    102    100    100    100    -37
-vs. P5 :   -365   -138   -138   -365   -143      0   -138   -373    -86   -183   -373   -138   -373   -138   -138   -138   -368
-vs. P6 :    300    100    100    300    100    290      0    100    250    140    106    100    102    100    100    100    288
-vs. P7 :   -393    100    100   -393    100   -368    100      0   -328   -193   -371    100    102    100    100    100   -371
-vs. P8 :   -225    -88    -88   -225   -102   -208    -88   -225      0   -115   -225    -88   -165    -88    -88    -88   -228
-vs. P9 :    160     50     50    160     90    154     50    162    132      0    162     50     92     50     50     50    157
-vs. P10 :   -393     82     90   -393   -268   -368     92   -371   -328   -193      0     82   -218     82     82     80   -371
-vs. P11 :    300    100    100    300    100    290    100    100    250    140    114      0    102    100    100    100    288
-vs. P12 :   -393     97     97   -393     97   -368     97     97   -160     87   -214     97      0     97     97     97   -354
-vs. P13 :    300    100    100    300    100    290    100    100    250    140    114    100    102      0    100    100    288
-vs. P14 :    300    100    100    300    100    290    100    100    250    140    114    100    102    100      0    100    288
-vs. P15 :    300    100    100    300    100    290    100    100    250    140    116    100    102    100    100      0    288
-vs. P16 :   -358   -135   -135   -358   -248   -364   -135   -362   -314   -176   -362   -135   -359   -135   -135   -135      0
-TOTAL  :   -317    368    378   -319   -324   -262    378  -1068      5   -103  -1441    368   -901    368    368    366   -326
+vs. P0 :      0   -150   -150   -398   -275   -388   -150   -398   -338   -200   -398   -150   -163   -150   -150   -150   -385
+vs. P1 :    300      0    100    300    100    290    100    100    250    140    104    100    290    100    100    100    288
+vs. P2 :    300    100      0    300    100    290    100    100    250    140    106    100    290    100    100    100    288
+vs. P3 :   -393   -150   -150      0   -275   -388   -150   -398   -338   -200   -398   -150   -163   -150   -150   -150   -385
+vs. P4 :    -50    100    100    -50      0      6    100    100     15     90    -18    100     95    100    100    100    -37
+vs. P5 :   -365   -138   -138   -365   -143      0   -138   -373    -86   -183   -373   -138   -136   -138   -138   -138   -368
+vs. P6 :    300    100    100    300    100    290      0    100    250    140    110    100    290    100    100    100    288
+vs. P7 :   -393    100    100   -393    100   -368    100      0   -328   -193   -191    100   -148    100    100    100   -371
+vs. P8 :   -225    -88    -88   -225   -102   -208    -88   -225      0   -115   -223    -88   -181    -88    -88    -88   -228
+vs. P9 :    160     50     50    160     90    154     50    162    132      0    162     50     91     50     50     50    157
+vs. P10 :   -393     95     92   -393   -193   -368     87   -191   -331   -193      0     97     42     95     92     92   -371
+vs. P11 :    300    100    100    300    100    290    100    100    250    140    102      0    290    100    100    100    288
+vs. P12 :    265   -138   -138    265     91    260   -138    261   -181     78    109   -138      0   -138   -138   -138   -368
+vs. P13 :    300    100    100    300    100    290    100    100    250    140    104    100    290      0    100    100    288
+vs. P14 :    300    100    100    300    100    290    100    100    250    140    106    100    290    100      0    100    288
+vs. P15 :    300    100    100    300    100    290    100    100    250    140    106    100    290    100    100      0    288
+vs. P16 :   -358   -135   -135   -358   -248   -364   -135   -362   -314   -176   -362   -135   -364   -135   -135   -135      0
+TOTAL  :    348    146    143    343   -255    366    138   -724    -19   -112   -954    148   1103    146    143    143   -340
 --------------------------------------------------------------------------------
 Section 2 - Leaderboard
 --------------------------------------------------------------------------------
 Average points per round:
 Team name (P#):  Score      with strategy name
-The name t(P2):         22 points with The name the team gives to this strategy
-The name t(P6):         22 points with The name the team gives to this strategy
-E0        (P1):         21 points with Collude                                 
-The name t(P11):         21 points with The name the team gives to this strategy
-The name t(P13):         21 points with The name the team gives to this strategy
-The name t(P14):         21 points with The name the team gives to this strategy
-The name t(P15):         21 points with The name the team gives to this strategy
-WhiteShirt(P8):          0 points with 1-50 Every Other Betray, then Betray    
+HYPEBEASTS(P12):         64 points with [retacted]'s Algorithm                  
+Team Betra(P5):         21 points with Betray if pattern, otherwise collude    
+E1        (P0):         20 points with Betray                                  
+a and w   (P3):         20 points with one in a million                        
+E0        (P1):          8 points with Collude                                 
+The name t(P2):          8 points with The name the team gives to this strategy
+The name t(P6):          8 points with The name the team gives to this strategy
+The name t(P11):          8 points with The name the team gives to this strategy
+The name t(P13):          8 points with The name the team gives to this strategy
+The name t(P14):          8 points with The name the team gives to this strategy
+The name t(P15):          8 points with The name the team gives to this strategy
+WhiteShirt(P8):         -2 points with 1-50 Every Other Betray, then Betray    
 team_Barne(P9):         -7 points with Three is Company                        
-Team Betra(P5):        -16 points with Betray if pattern, otherwise collude    
-E1        (P0):        -19 points with Betray                                  
-a and w   (P3):        -19 points with one in a million                        
-East-West (P4):        -20 points with I'm nice until you cross me.            
+East-West (P4):        -15 points with I'm nice until you cross me.            
 QueenBee  (P16):        -20 points with DanceTheDance                           
-HYPEBEASTS(P12):        -53 points with [retacted]'s Algorithm                  
-The Law Fi(P7):        -63 points with Jaded                                   
-T8CrzyPepl(P10):        -85 points with Collude unless betrayed                 
+The Law Fi(P7):        -43 points with Jaded                                   
+T8CrzyPepl(P10):        -57 points with Collude unless betrayed                 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 example1--------------------------------------------------------------------------------
@@ -905,11 +905,29 @@ team10--------------------------------------------------------------------------
 #     move: A function that returns 'c' or 'b'
 ####
 
+def enum(**named_values):
+    return type('Enum', (), named_values)
+
 team_name = 'HYPEBEASTS' # Only 10 chars displayed.
 strategy_name = '[retacted]\'s Algorithm'
-strategy_description = '[redacted]'
-    
+strategy_description = 'doing ur mom'
+
+Style = enum(STINGY=1, FAIR=2, GULLIBLE=3, PATTERNED=4, RANDOM=0)
+style = Style.RANDOM
+class style():
+    STINGY = 1 #always aggressive
+    FAIR = 2 #copies you
+    GULLIBLE = 3 #tends to pick collude more
+    PATTERNED = 4 #pattern
+    RANDOM = 5 #unknown/random
+
+#test sequence
+testSequence = 'cccbbbcbcb'
+        
+        
+
 def move(my_history, their_history, my_score, their_score):
+    global style
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
@@ -922,14 +940,56 @@ def move(my_history, their_history, my_score, their_score):
     # The first round between these two players is my_history[0] and their_history[0].
     # The most recent round is my_history[-1] and their_history[-1].
 
-    if len(my_history) == 99:
-        return 'b'
+    #Collude by default so there won't be an invalid move
+    returnValue = 'c'
+    prevMatches = len(their_history)
+    matchNum = prevMatches + 1
 
-    if len(their_history) > 0:# and 'b' in their_history:
-        return their_history[-1]
+    #Mimic by default normally
+    if prevMatches > 0:
+        returnValue = their_history[-1]
+
+    #Send test sequence
+    if prevMatches < len(testSequence):
+        returnValue = testSequence[prevMatches]
         
-    else:
-        return 'c'
+    #Detect playstyle
+    if prevMatches == len(testSequence):
+        #Detect
+        #stingy
+        if(their_history[4:].upper()=='B'*(len(testSequence)-4)):
+            style = Style.STINGY
+        #fair
+        if(their_history[1:].upper()==testSequence.upper()):
+            style = Style.FAIR
+        #gullible            
+        if(their_history[4:].upper()=='C'*(len(testSequence)-4)):
+            style = Style.GULLIBLE
+        #patterned            
+        if('BCBCBCBC' in their_history.upper()):
+            style = Style.PATTERNED
+    
+    if prevMatches >= len(testSequence):
+        if style == 1:
+            returnValue = 'c'
+        elif style == 2:
+            returnValue = 'c'
+        elif style == 3:
+            returnValue = 'b'
+        elif style == 4:
+            #Just mimic
+            None
+        else:
+            #Just mimic
+            None
+
+        
+
+    # #Ending move
+    # if len(my_history) == 99:
+    #     returnValue = 'b'
+
+    return returnValue
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
@@ -1277,10 +1337,10 @@ BBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
--400 pt/round: E1(P0) "Betray"
--400 pt/round: a and w(P3) "one in a million"
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-393 pt/round: E1(P0) "Betray"
+-398 pt/round: a and w(P3) "one in a million"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
@@ -1358,13 +1418,13 @@ BBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
--393 pt/round: E1(P0) "Betray"
--398 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+265 pt/round: E1(P0) "Betray"
+-163 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+BBBbbbBbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccbbbcbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbb
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 300 pt/round: E1(P0) "Betray"
@@ -1487,13 +1547,13 @@ cCCCCcCCCCcCCCCcCCCC
 BCCCCBCCCCBCCCCBCCCC
 
 --------------------------------------------------------------------------------
-82 pt/round: E0(P1) "Collude"
-114 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCcCCCcCCCCCCCc
-CCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCBCCCBCCCCCCCB
+95 pt/round: E0(P1) "Collude"
+104 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCcCcCCCCCC
-CCCCCCCCCCCBCBCCCCCC
+CCCCCCCCCcCCCCCCCCCC
+CCCCCCCCCBCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 100 pt/round: E0(P1) "Collude"
@@ -1505,13 +1565,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: E0(P1) "Collude"
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+-138 pt/round: E0(P1) "Collude"
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 100 pt/round: E0(P1) "Collude"
@@ -1571,13 +1631,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--148 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
-298 pt/round: a and w(P3) "one in a million"
+-150 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
+300 pt/round: a and w(P3) "one in a million"
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-ccccccccccccCccccccc
-BBBBBBBBBBBBCBBBBBBB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
@@ -1634,10 +1694,10 @@ cCCCCcCCCCcCCCCcCCCC
 BCCCCBCCCCBCCCCBCCCC
 
 --------------------------------------------------------------------------------
-90 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
-108 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCccCCCC
-CCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBBCCCC
+92 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
+106 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCcCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCBCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
@@ -1652,13 +1712,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+-138 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
@@ -1700,10 +1760,10 @@ BBBBBBBBBBBBBBBBBBBB
 --------------------------------------------------------------------------------
 Section 3 - Game Data for Team a and w
 --------------------------------------------------------------------------------
--400 pt/round: a and w(P3) "one in a million"
--400 pt/round: E1(P0) "Betray"
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-398 pt/round: a and w(P3) "one in a million"
+-393 pt/round: E1(P0) "Betray"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
@@ -1718,13 +1778,13 @@ BBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
-298 pt/round: a and w(P3) "one in a million"
--148 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
+300 pt/round: a and w(P3) "one in a million"
+-150 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBCBBBBBBB
-ccccccccccccCccccccc
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 -50 pt/round: a and w(P3) "one in a million"
@@ -1799,13 +1859,13 @@ BBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
--393 pt/round: a and w(P3) "one in a million"
--398 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+265 pt/round: a and w(P3) "one in a million"
+-163 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+BBBbbbBbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccbbbcbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbb
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 300 pt/round: a and w(P3) "one in a million"
@@ -1928,10 +1988,10 @@ cBCCCcBCCCcBCCCcBCCC
 BcCCCBcCCCBcCCCBcCCC
 
 --------------------------------------------------------------------------------
--268 pt/round: East-West(P4) "I'm nice until you cross me."
--48 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-cBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
-BcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
+-193 pt/round: East-West(P4) "I'm nice until you cross me."
+-18 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCCCCCCCCCCCCCCCCCCcBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+CCCCCCCCCCCCCCCCCCCCBcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
 
 cbcbcbcbcbcbcbcbcbcb
 BbBbBbBbBbBbBbBbBbBb
@@ -1946,13 +2006,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: East-West(P4) "I'm nice until you cross me."
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+91 pt/round: East-West(P4) "I'm nice until you cross me."
+95 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcbcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCBbBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+CCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 100 pt/round: East-West(P4) "I'm nice until you cross me."
@@ -2093,13 +2153,13 @@ BBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
--368 pt/round: Team Betrayal(P5) "Betray if pattern, otherwise collude"
--373 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CCCCCcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+260 pt/round: Team Betrayal(P5) "Betray if pattern, otherwise collude"
+-136 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCccbBbBbBCCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCBBbcbcbcCCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbb
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 290 pt/round: Team Betrayal(P5) "Betray if pattern, otherwise collude"
@@ -2222,13 +2282,13 @@ cCCCCcCCCCcCCCCcCCCC
 BCCCCBCCCCBCCCCBCCCC
 
 --------------------------------------------------------------------------------
-92 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
-106 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCC
+87 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
+110 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCc
+CCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCB
 
-CCCCCCCcCCCCCCCCCCCC
-CCCCCCCBCCCCCCCCCCCC
+CCCCCCCccCCcCCCCCCCC
+CCCCCCCBBCCBCCCCCCCC
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -2240,13 +2300,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+-138 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -2369,10 +2429,10 @@ bBBBBbBBBBbBBBBbBBBB
 bccccbccccbccccbcccc
 
 --------------------------------------------------------------------------------
--371 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
--371 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CCCCBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-191 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
+-191 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
@@ -2387,13 +2447,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+261 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
+-148 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcbbBbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCBbbcbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 100 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
@@ -2516,10 +2576,10 @@ bBBBBbBBBBbBBBBbBBBB
 bccccbccccbccccbcccc
 
 --------------------------------------------------------------------------------
--328 pt/round: WhiteShirts(P8) "1-50 Every Other Betray, then Betray"
--225 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-331 pt/round: WhiteShirts(P8) "1-50 Every Other Betray, then Betray"
+-223 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+cBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+BcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
@@ -2534,10 +2594,10 @@ BBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
--160 pt/round: WhiteShirts(P8) "1-50 Every Other Betray, then Betray"
--165 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-181 pt/round: WhiteShirts(P8) "1-50 Every Other Betray, then Betray"
+-181 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CBCbcbCbCbcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CcCbBbCbCbBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
@@ -2681,13 +2741,13 @@ BCCCCBCCCCBCCCCBCCCC
 cCCCCcCCCCcCCCCcCCCC
 
 --------------------------------------------------------------------------------
-87 pt/round: team_Barney(P9) "Three is Company"
-92 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-BcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCC
-cBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCC
+78 pt/round: team_Barney(P9) "Three is Company"
+91 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+BCCccbCcCcBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCC
+cCCBBbCBCBcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCC
 
-BcCCCBcCCCBcCCCBcCCc
-cBCCCcBCCCcBCCCcBCCB
+BcCCCBcCCCBcCCCBcCCC
+cBCCCcBCCCcBCCCcBCCC
 
 --------------------------------------------------------------------------------
 140 pt/round: team_Barney(P9) "Three is Company"
@@ -2738,19 +2798,19 @@ bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
-114 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-82 pt/round: E0(P1) "Collude"
-CCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCBCCCBCCCCCCCB
-CCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCcCCCcCCCCCCCc
+104 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+95 pt/round: E0(P1) "Collude"
+CCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCBCBCCCCCC
-CCCCCCCCCCCcCcCCCCCC
+CCCCCCCCCBCCCCCCCCCC
+CCCCCCCCCcCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-108 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-90 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBBCCCC
-CCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCccCCCC
+106 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+92 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCBCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCcCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
@@ -2765,10 +2825,10 @@ bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
--48 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
--268 pt/round: East-West(P4) "I'm nice until you cross me."
-BcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
-cBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+-18 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+-193 pt/round: East-West(P4) "I'm nice until you cross me."
+CCCCCCCCCCCCCCCCCCCCBcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
+CCCCCCCCCCCCCCCCCCCCcBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
 
 BbBbBbBbBbBbBbBbBbBb
 cbcbcbcbcbcbcbcbcbcb
@@ -2783,28 +2843,28 @@ bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
-106 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-92 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
-CCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCC
+110 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+87 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
+CCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCB
+CCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCc
 
-CCCCCCCBCCCCCCCCCCCC
-CCCCCCCcCCCCCCCCCCCC
+CCCCCCCBBCCBCCCCCCCC
+CCCCCCCccCCcCCCCCCCC
 
 --------------------------------------------------------------------------------
--371 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
--371 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
-CCCCBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CCCCcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-191 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+-191 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
--225 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
--328 pt/round: WhiteShirts(P8) "1-50 Every Other Betray, then Betray"
-CcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-223 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+-331 pt/round: WhiteShirts(P8) "1-50 Every Other Betray, then Betray"
+BcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
@@ -2819,49 +2879,49 @@ bBBBBbBBBBbBBBBbBBBB
 bccccbccccbccccbcccc
 
 --------------------------------------------------------------------------------
-114 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-82 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-CCCCCCCCCCCCCBCCCBCCCBCCCCCCCCCCCCCCBCCCCCCCCCCCCCCBBCCCCCCCCCCCCCCCCBCCCCCCCCCC
-CCCCCCCCCCCCCcCCCcCCCcCCCCCCCCCCCCCCcCCCCCCCCCCCCCCccCCCCCCCCCCCCCCCCcCCCCCCCCCC
+102 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+97 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+CCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--214 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
--218 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+109 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+42 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcbbBbBbBBBBBBBBBBCCCCCCCCCCCBCCCCBCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCBbbcbcbccccccccccCCCCCCCCCCCcCCCCcCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbb
-
---------------------------------------------------------------------------------
-114 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-82 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCC
-
-CCCBCCBCCCBBCCCCCCBC
-CCCcCCcCCCccCCCCCCcC
+CCCCCCCCCCCCCCCCCBCC
+CCCCCCCCCCCCCCCCCcCC
 
 --------------------------------------------------------------------------------
-114 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-82 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
-CCCCBCCCCCCCBBCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCBCBCCCCCCCCCCCCBCCCCCCCCCCCCCCC
-CCCCcCCCCCCCccCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCcCcCCCCCCCCCCCCcCCCCCCCCCCCCCCC
+104 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+95 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCBCCCCCCCCCCCCCCCCC
+CCcCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+106 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+92 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCBCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCcCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-116 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-80 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCBCCCCBCCCBCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCBCCCCCCCCCCCCCBCCCC
-CCCCCCCCCCCCCCcCCCCcCCCcCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCcCCCCCCCCCCCCCcCCCC
+106 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+92 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCBCCCCCC
-CCCCCCCCCCCCCcCCCCCC
+CCCCCCCCBCCCBCCCCCCC
+CCCCCCCCcCCCcCCCCCCC
 
 --------------------------------------------------------------------------------
 -362 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
@@ -2966,22 +3026,22 @@ cCCCCcCCCCcCCCCcCCCC
 BCCCCBCCCCBCCCCBCCCC
 
 --------------------------------------------------------------------------------
-82 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-114 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCCCCCCCCCCcCCCcCCCcCCCCCCCCCCCCCCcCCCCCCCCCCCCCCccCCCCCCCCCCCCCCCCcCCCCCCCCCC
-CCCCCCCCCCCCCBCCCBCCCBCCCCCCCCCCCCCCBCCCCCCCCCCCCCCBBCCCCCCCCCCCCCCCCBCCCCCCCCCC
+97 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+102 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+-138 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
@@ -3023,145 +3083,145 @@ BBBBBBBBBBBBBBBBBBBB
 --------------------------------------------------------------------------------
 Section 3 - Game Data for Team HYPEBEASTS
 --------------------------------------------------------------------------------
--398 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
--393 pt/round: E1(P0) "Betray"
-cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-163 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+265 pt/round: E1(P0) "Betray"
+cccbbbcbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBbbbBbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-138 pt/round: E0(P1) "Collude"
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-138 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-163 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+265 pt/round: a and w(P3) "one in a million"
+cccbbbcbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBbbbBbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+95 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+91 pt/round: East-West(P4) "I'm nice until you cross me."
+CCCBbBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCcbcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-136 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+260 pt/round: Team Betrayal(P5) "Betray if pattern, otherwise collude"
+CCCBBbcbcbcCCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCccbBbBbBCCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-138 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-148 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+261 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
+CCCBbbcbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCcbbBbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+-181 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-181 pt/round: WhiteShirts(P8) "1-50 Every Other Betray, then Betray"
+CcCbBbCbCbBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CBCbcbCbCbcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: E0(P1) "Collude"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+91 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+78 pt/round: team_Barney(P9) "Three is Company"
+cCCBBbCBCBcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCC
+BCCccbCcCcBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCC
 
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
-
---------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: The name the team gives to itself(P2) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
+cBCCCcBCCCcBCCCcBCCC
+BcCCCBcCCCBcCCCBcCCC
 
 --------------------------------------------------------------------------------
--398 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
--393 pt/round: a and w(P3) "one in a million"
-cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+42 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+109 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCBbbcbcbccccccccccCCCCCCCCCCCcCCCCcCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCcbbBbBbBBBBBBBBBBCCCCCCCCCCCBCCCCBCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbb
-
---------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: East-West(P4) "I'm nice until you cross me."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
+CCCCCCCCCCCCCCCCCcCC
+CCCCCCCCCCCCCCCCCBCC
 
 --------------------------------------------------------------------------------
--373 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
--368 pt/round: Team Betrayal(P5) "Betray if pattern, otherwise collude"
-CCCCCcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CCCCCBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-138 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbb
-
---------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: The Law Firm of Pratt and Roberts(P7) "Jaded"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-138 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
-
---------------------------------------------------------------------------------
--165 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
--160 pt/round: WhiteShirts(P8) "1-50 Every Other Betray, then Betray"
-CcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-
-bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbb
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
-92 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-87 pt/round: team_Barney(P9) "Three is Company"
-cBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCC
-BcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCC
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-138 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-cBCCCcBCCCcBCCCcBCCB
-BcCCCBcCCCBcCCCBcCCc
-
---------------------------------------------------------------------------------
--218 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
--214 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-
-bbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbb
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-138 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
-
---------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
-
---------------------------------------------------------------------------------
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-97 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCB
-CCCCCCCCCCCCCCCCCCCc
-
---------------------------------------------------------------------------------
--359 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
--354 pt/round: QueenBee(P16) "DanceTheDance"
-CCCcBCcbBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CCCBcCBbcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-364 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+-368 pt/round: QueenBee(P16) "DanceTheDance"
+CCCbBBcbCbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CCCbccBbCbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb
@@ -3260,13 +3320,13 @@ cCCCCcCCCCcCCCCcCCCC
 BCCCCBCCCCBCCCCBCCCC
 
 --------------------------------------------------------------------------------
-82 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
-114 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCC
+95 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
+104 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCcCCcCCCccCCCCCCcC
-CCCBCCBCCCBBCCCCCCBC
+CCcCCCCCCCCCCCCCCCCC
+CCBCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
@@ -3278,13 +3338,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+-138 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P13) "The name the team gives to this strategy"
@@ -3407,10 +3467,10 @@ cCCCCcCCCCcCCCCcCCCC
 BCCCCBCCCCBCCCCBCCCC
 
 --------------------------------------------------------------------------------
-82 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
-114 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCcCCCCCCCccCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCcCcCCCCCCCCCCCCcCCCCCCCCCCCCCCC
-CCCCBCCCCCCCBBCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCBCBCCCCCCCCCCCCBCCCCCCCCCCCCCCC
+92 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
+106 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCcCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCBCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
@@ -3425,13 +3485,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+-138 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P14) "The name the team gives to this strategy"
@@ -3554,13 +3614,13 @@ cCCCCcCCCCcCCCCcCCCC
 BCCCCBCCCCBCCCCBCCCC
 
 --------------------------------------------------------------------------------
-80 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
-116 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
-CCCCCCCCCCCCCCcCCCCcCCCcCCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCcCCCCCCCCCCCCCcCCCC
-CCCCCCCCCCCCCCBCCCCBCCCBCCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCBCCCCCCCCCCCCCBCCCC
+92 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
+106 pt/round: T8CrzyPepl - Team 8 - Crazy People # Only 10 chars displayed(P10) "Collude unless betrayed"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCcCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCBCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCcCCCCCC
-CCCCCCCCCCCCCBCCCCCC
+CCCCCCCCcCCCcCCCCCCC
+CCCCCCCCBCCCBCCCCCCC
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
@@ -3572,13 +3632,13 @@ CCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
-97 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
-102 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+-138 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
+290 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCcccCcCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCBBBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-CCCCCCCCCCCCCCCCCCCc
-CCCCCCCCCCCCCCCCCCCB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 100 pt/round: The name the team gives to itself(P15) "The name the team gives to this strategy"
@@ -3719,10 +3779,10 @@ BBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
--354 pt/round: QueenBee(P16) "DanceTheDance"
--359 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
-CCCBcCBbcBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-CCCcBCcbBcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+-368 pt/round: QueenBee(P16) "DanceTheDance"
+-364 pt/round: HYPEBEASTS(P12) "[retacted]'s Algorithm"
+CCCbccBbCbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CCCbBBcbCbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 bbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbb

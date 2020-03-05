@@ -11,20 +11,24 @@ def enum(**named_values):
 
 team_name = 'HYPEBEASTS' # Only 10 chars displayed.
 strategy_name = '[retacted]\'s Algorithm'
-strategy_description = '[redacted]'
+strategy_description = 'AI guided algrorithm that uses hyperthreaded databuffers to energize character generating flux capacieors. Uses quantum coupled machine learning to do error correction.'
 
-Color = enum(RED='red', GREEN='green', BLUE='blue')
-class style(Enum):
+Style = enum(STINGY=1, FAIR=2, GULLIBLE=3, PATTERNED=4, RANDOM=0)
+style = Style.RANDOM
+class style():
     STINGY = 1 #always aggressive
     FAIR = 2 #copies you
     GULLIBLE = 3 #tends to pick collude more
     PATTERNED = 4 #pattern
     RANDOM = 5 #unknown/random
 
+#test sequence
+testSequence = 'cccbbbcbcb'
         
         
 
 def move(my_history, their_history, my_score, their_score):
+    global style
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
@@ -37,18 +41,54 @@ def move(my_history, their_history, my_score, their_score):
     # The first round between these two players is my_history[0] and their_history[0].
     # The most recent round is my_history[-1] and their_history[-1].
 
+    #Collude by default so there won't be an invalid move
     returnValue = 'c'
+    prevMatches = len(their_history)
+    matchNum = prevMatches + 1
 
-    #Mimic by default
-    if len(their_history) > 0:
+    #Mimic by default normally
+    if prevMatches > 0:
         returnValue = their_history[-1]
 
+    #Send test sequence
+    if prevMatches < len(testSequence):
+        returnValue = testSequence[prevMatches]
+        
+    #Detect playstyle
+    if prevMatches == len(testSequence):
+        #Detect
+        #stingy
+        if(their_history[4:].upper()=='B'*(len(testSequence)-4)):
+            style = Style.STINGY
+        #fair
+        if(their_history[1:].upper()==testSequence.upper()):
+            style = Style.FAIR
+        #gullible            
+        if(their_history[4:].upper()=='C'*(len(testSequence)-4)):
+            style = Style.GULLIBLE
+        #patterned            
+        if('BCBCBCBC' in their_history.upper()):
+            style = Style.PATTERNED
+    
+    if prevMatches >= len(testSequence):
+        if style == 1:
+            returnValue = 'c'
+        elif style == 2:
+            returnValue = 'c'
+        elif style == 3:
+            returnValue = 'b'
+        elif style == 4:
+            #Just mimic
+            None
+        else:
+            #Just mimic
+            None
 
+        
 
-
-    #Ending move
-    if len(my_history) == 99:
-        returnValue = 'b'
+    # #Ending move
+    # if len(my_history) == 99:
+    #     returnValue = 'b'
 
     return returnValue
 
