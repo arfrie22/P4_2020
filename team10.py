@@ -69,6 +69,16 @@ def move(my_history, their_history, my_score, their_score):
         #patterned            
         if('BCBCBCBC' in their_history.upper()):
             style = Style.PATTERNED
+
+    #Detect playstyle at 50
+    if matchNum > 10 and matchNum % 10 == 0:
+        #Detect
+        #stingy
+        if(float(their_history[4:].count('b'))/len(their_history[4:]) > 0.8):
+            style = Style.STINGY
+        #gullible            
+        if(float(their_history[4:].count('c'))/len(their_history[4:]) > 0.8):
+            style = Style.GULLIBLE
     
     if prevMatches >= len(testSequence):
         if style == 1:
