@@ -88,8 +88,11 @@ def move(my_history, their_history, my_score, their_score):
         elif style == 3:
             returnValue = 'b'
         elif style == 4:
-            #Just mimic
-            None
+            #Collude twice then just mimic
+            if (prevMatches == len(testSequence) or prevMatches == len(testSequence) + 1):
+                returnValue = 'c'
+            else:
+                None
         else:
             #Just mimic
             None
