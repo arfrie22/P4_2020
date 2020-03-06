@@ -1,0 +1,1285 @@
+--------------------------------------------------------------------------------
+Section 0 - Line up
+--------------------------------------------------------------------------------
+Player 0 (P0): The name the team gives to itself, The name the team gives to this strategy
+        How does this strategy decide?
+Player 1 (P1): a and w, one in a million
+        How does this strategy decide?
+Player 2 (P2): East-West, I'm nice until you cross me.
+        We collude except when we've been severely punished.
+Player 3 (P3): Team Betrayal, Betray if pattern, otherwise collude
+        First 5 collude; if pattern of 2 betray or collude in a row in the past 
+        5 moves, betray; otherwise collude
+Player 4 (P4): The name the team gives to itself, The name the team gives to this strategy
+        How does this strategy decide?
+Player 5 (P5): The Law Firm of Pratt and Roberts, Jaded
+        We collude until we're screwed.
+Player 6 (P6): WhiteShirts, 1-50 Every Other Betray, then Betray
+        Collude every other turn up to turn 50 then betray every turn
+Player 7 (P7): team_Barney, Three is Company
+        We will betray every third time regardless of what the other has done
+--------------------------------------------------------------------------------
+Section 1 - Player vs. Player
+--------------------------------------------------------------------------------
+Each column shows pts/round earned against each other player:
+             P0     P1     P2     P3     P4     P5     P6     P7
+vs. P0 :      0    298    100    293    100    100    274    140
+vs. P1 :   -149      0   -275   -394   -149   -398   -348   -200
+vs. P2 :    100    -48      0      3    100    100     -1     89
+vs. P3 :   -142   -382   -147      0   -144   -383   -218   -191
+vs. P4 :    100    298    100    294      0    100    273    140
+vs. P5 :    100   -393    100   -380    100      0   -360   -196
+vs. P6 :   -118   -253   -144   -289   -118   -302      0   -152
+vs. P7 :     49    160     89    154     49    159    142      0
+TOTAL  :    -60   -320   -177   -319    -62   -624   -238   -370
+--------------------------------------------------------------------------------
+Section 2 - Leaderboard
+--------------------------------------------------------------------------------
+Average points per round:
+Team name (P#):  Score      with strategy name
+The name t(P0):         -8 points with The name the team gives to this strategy
+The name t(P4):         -8 points with The name the team gives to this strategy
+East-West (P2):        -23 points with I'm nice until you cross me.            
+WhiteShirt(P6):        -30 points with 1-50 Every Other Betray, then Betray    
+a and w   (P1):        -40 points with one in a million                        
+Team Betra(P3):        -40 points with Betray if pattern, otherwise collude    
+team_Barne(P7):        -47 points with Three is Company                        
+The Law Fi(P5):        -78 points with Jaded                                   
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+team0--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'The name the team gives to itself' # Only 10 chars displayed.
+strategy_name = 'The name the team gives to this strategy'
+strategy_description = 'How does this strategy decide?'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+    return 'c'
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team1--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = "a and w"  # Only 10 chars displayed.
+strategy_name = 'one in a million'
+strategy_description = 'How does this strategy decide?'
+   
+    
+import random 
+  
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+    if len(my_history)==0:
+        return 'b'
+    
+    else: 
+        r= random.randint(1,1000)
+        if r==5:
+            return 'c'
+        else:
+            return 'b'
+        
+    
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+   # return 'c'
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team2--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = "East-West" # Only 10 chars displayed.
+strategy_name = "I'm nice until you cross me."
+strategy_description = "We collude except when we've been severely punished."
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+    if len(my_history) == 0: # It's the first round; collude.
+        return 'c'
+    else:
+        if my_history[-1]=='c' and their_history[-1]=='b':
+            return 'b' # Betray if severely punished last time,
+        else:
+            return 'c' # otherwise collude.
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team3--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'Team Betrayal' # Only 10 chars displayed.
+strategy_name = 'Betray if pattern, otherwise collude'
+strategy_description = 'First 5 collude; if pattern of 2 betray or collude in a row in the past 5 moves, betray; otherwise collude'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    if len(my_history) < 5:
+        return "c"
+    elif "cc" in their_history [-6: -1]:
+        return "b"
+    elif "bb" in their_history [-6: -1]:
+        return "b"
+    else:
+        return "c"
+
+
+    
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team4--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'The name the team gives to itself' # Only 10 chars displayed.
+strategy_name = 'The name the team gives to this strategy'
+strategy_description = 'How does this strategy decide?'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+    return 'c'
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team5--------------------------------------------------------------------------------
+#### The Law Firm Pratt and Roberts
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'The Law Firm of Pratt and Roberts' # Only 10 chars displayed.
+strategy_name = 'Jaded'
+strategy_description = "We collude until we're screwed."
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+   #  gamecnt = len(their_history)
+   #  betrayflag = False
+   #  if len(my_history)==0: # It's the first round; collude.
+   #      return 'c'
+   #  while gamecnt>0:
+   #      if their_history[gamecnt] == 'b':
+   #          return 'b'
+   #      gamecnt -= 1
+   # 
+   #  return 'c'
+    if len(my_history)==0: # It's the first round; collude.
+        return 'c'    
+    elif 'b' in their_history:
+        return 'b'
+    else:
+        return 'c'
+  
+        
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team6--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'WhiteShirts' # Only 10 chars displayed.
+strategy_name = '1-50 Every Other Betray, then Betray'
+strategy_description = 'Collude every other turn up to turn 50 then betray every turn'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' We will collude every other play up to 50 then betray every turn.
+    
+    Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+
+
+     # We collude every other round or betray every round after the 50th (first round is round #0).
+    if len(their_history)<50:
+        if  len(my_history)%2 == 0:
+            return 'c'
+        else:
+            return 'b'   
+    else: 
+         return 'b'
+        
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team7--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'team_Barney' # Only 10 chars displayed.
+strategy_name = 'Three is Company'
+strategy_description = 'We will betray every third time regardless of what the other has done'
+    
+def move(my_history, their_history, my_score, their_score):
+    # This player colludes on every third round (first round is round #0).
+    if len(my_history)%5 == 0:
+        return 'b'
+    else:
+        return 'c'
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+Section 3 - Game Data for Team The name the team gives to itself
+--------------------------------------------------------------------------------
+-149 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+298 pt/round: a and w(P1) "one in a million"
+ccccccccccccccccccccccCccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+100 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+100 pt/round: East-West(P2) "I'm nice until you cross me."
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-142 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+293 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+CCCCCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCCCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+100 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+100 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+100 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+100 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCC
+CCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-118 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+274 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+CcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCccccccccccccccccccccccccccccccc
+CBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+49 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+140 pt/round: team_Barney(P7) "Three is Company"
+cCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCC
+BCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCC
+
+cCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCC
+BCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCC
+
+cCCCCcCCCCcCCC
+BCCCCBCCCCBCCC
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team a and w
+--------------------------------------------------------------------------------
+298 pt/round: a and w(P1) "one in a million"
+-149 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+BBBBBBBBBBBBBBBBBBBBBBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccCccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-48 pt/round: a and w(P1) "one in a million"
+-275 pt/round: East-West(P2) "I'm nice until you cross me."
+BbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
+cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+
+BbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
+cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+
+BbBbBbBbB
+cbcbcbcbc
+
+--------------------------------------------------------------------------------
+-382 pt/round: a and w(P1) "one in a million"
+-394 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+BBBBBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+298 pt/round: a and w(P1) "one in a million"
+-149 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccCccccccccccc
+
+BBBBBBBBBBB
+ccccccccccc
+
+--------------------------------------------------------------------------------
+-393 pt/round: a and w(P1) "one in a million"
+-398 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-253 pt/round: a and w(P1) "one in a million"
+-348 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+BbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+160 pt/round: a and w(P1) "one in a million"
+-200 pt/round: team_Barney(P7) "Three is Company"
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+
+bBBBB
+bcccc
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team East-West
+--------------------------------------------------------------------------------
+100 pt/round: East-West(P2) "I'm nice until you cross me."
+100 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-275 pt/round: East-West(P2) "I'm nice until you cross me."
+-48 pt/round: a and w(P1) "one in a million"
+cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+BbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
+
+cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+BbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
+
+cbcbcbcbc
+BbBbBbBbB
+
+--------------------------------------------------------------------------------
+-147 pt/round: East-West(P2) "I'm nice until you cross me."
+3 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+CCCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbc
+CCCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbB
+
+bcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcb
+bBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBb
+
+cbcbCCCcbcbcbCCCcbcbcbCCCcbcbc
+BbBbCCCBbBbBbCCCBbBbBbCCCBbBbB
+
+--------------------------------------------------------------------------------
+100 pt/round: East-West(P2) "I'm nice until you cross me."
+100 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+100 pt/round: East-West(P2) "I'm nice until you cross me."
+100 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-144 pt/round: East-West(P2) "I'm nice until you cross me."
+-1 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+CcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+CBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbB
+
+bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+bBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbB
+
+--------------------------------------------------------------------------------
+89 pt/round: East-West(P2) "I'm nice until you cross me."
+89 pt/round: team_Barney(P7) "Three is Company"
+cBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCC
+BcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCC
+
+cBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBC
+BcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcC
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team Team Betrayal
+--------------------------------------------------------------------------------
+293 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+-142 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+CCCCCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCCCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-394 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+-382 pt/round: a and w(P1) "one in a million"
+cccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+BBBBBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+3 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+-147 pt/round: East-West(P2) "I'm nice until you cross me."
+CCCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbB
+CCCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbc
+
+bBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBbBbBbCCCBb
+bcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcbcbcbCCCcb
+
+BbBbCCCBbBbBbCCCBbBbBbCCCBbBbB
+cbcbCCCcbcbcbCCCcbcbcbCCCcbcbc
+
+--------------------------------------------------------------------------------
+294 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+-144 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+CCCCCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CCCCCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-380 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+-383 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+CCCCCBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CCCCCcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-289 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+-218 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+CcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcccbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBBBbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbb
+bbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+154 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+-191 pt/round: team_Barney(P7) "Three is Company"
+cCCCCbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+BCCCCbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+
+bBB
+bcc
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team The name the team gives to itself
+--------------------------------------------------------------------------------
+100 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+100 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-149 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+298 pt/round: a and w(P1) "one in a million"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccCccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBCBBBBBBBBBBB
+
+ccccccccccc
+BBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+100 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+100 pt/round: East-West(P2) "I'm nice until you cross me."
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-144 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+294 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+CCCCCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+CCCCCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+100 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+100 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-118 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+273 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+CcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCccccccccccccccccccccccccccccccc
+CBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+49 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+140 pt/round: team_Barney(P7) "Three is Company"
+cCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCC
+BCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCC
+
+cCCCCcCCCCcCCCCcCCCCcCCC
+BCCCCBCCCCBCCCCBCCCCBCCC
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team The Law Firm of Pratt and Roberts
+--------------------------------------------------------------------------------
+100 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+100 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCC
+CCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-398 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+-393 pt/round: a and w(P1) "one in a million"
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+100 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+100 pt/round: East-West(P2) "I'm nice until you cross me."
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-383 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+-380 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+CCCCCcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CCCCCBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+100 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+100 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-302 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+-360 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+CcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+159 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+-196 pt/round: team_Barney(P7) "Three is Company"
+cBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+Bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBB
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbcc
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team WhiteShirts
+--------------------------------------------------------------------------------
+274 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+-118 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+CBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-348 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+-253 pt/round: a and w(P1) "one in a million"
+cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+BbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-1 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+-144 pt/round: East-West(P2) "I'm nice until you cross me."
+CBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbB
+CcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+
+bBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbB
+bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+
+--------------------------------------------------------------------------------
+-218 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+-289 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+CBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBBBbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcccbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbb
+bbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+273 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+-118 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+CBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+CcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-360 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+-302 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+CBcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+CcBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+142 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+-152 pt/round: team_Barney(P7) "Three is Company"
+cBCBCbCBCBcBCBCbCBCBcBCBCbCBCBcBCBCbCBCBcBCBCbCBCBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+BcCcCbCcCcBcCcCbCcCcBcCcCbCcCcBcCcCbCcCcBcCcCbCcCcbccccbccccbccccbccccbccccbcccc
+
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+
+bBBBBbBBBBbBB
+bccccbccccbcc
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team team_Barney
+--------------------------------------------------------------------------------
+140 pt/round: team_Barney(P7) "Three is Company"
+49 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+BCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCC
+cCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCC
+
+BCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCC
+cCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCC
+
+BCCCCBCCCCBCCC
+cCCCCcCCCCcCCC
+
+--------------------------------------------------------------------------------
+-200 pt/round: team_Barney(P7) "Three is Company"
+160 pt/round: a and w(P1) "one in a million"
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+
+bcccc
+bBBBB
+
+--------------------------------------------------------------------------------
+89 pt/round: team_Barney(P7) "Three is Company"
+89 pt/round: East-West(P2) "I'm nice until you cross me."
+BcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCC
+cBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCC
+
+BcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcCCCBcC
+cBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBCCCcBC
+
+--------------------------------------------------------------------------------
+-191 pt/round: team_Barney(P7) "Three is Company"
+154 pt/round: Team Betrayal(P3) "Betray if pattern, otherwise collude"
+BCCCCbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+cCCCCbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+
+bcc
+bBB
+
+--------------------------------------------------------------------------------
+140 pt/round: team_Barney(P7) "Three is Company"
+49 pt/round: The name the team gives to itself(P4) "The name the team gives to this strategy"
+BCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCCBCCCC
+cCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCCcCCCC
+
+BCCCCBCCCCBCCCCBCCCCBCCC
+cCCCCcCCCCcCCCCcCCCCcCCC
+
+--------------------------------------------------------------------------------
+-196 pt/round: team_Barney(P7) "Three is Company"
+159 pt/round: The Law Firm of Pratt and Roberts(P5) "Jaded"
+Bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+cBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbcc
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBB
+
+--------------------------------------------------------------------------------
+-152 pt/round: team_Barney(P7) "Three is Company"
+142 pt/round: WhiteShirts(P6) "1-50 Every Other Betray, then Betray"
+BcCcCbCcCcBcCcCbCcCcBcCcCbCcCcBcCcCbCcCcBcCcCbCcCcbccccbccccbccccbccccbccccbcccc
+cBCBCbCBCBcBCBCbCBCBcBCBCbCBCBcBCBCbCBCBcBCBCbCBCBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+
+bccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbccccbcccc
+bBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBBbBBBB
+
+bccccbccccbcc
+bBBBBbBBBBbBB
+
+--------------------------------------------------------------------------------
